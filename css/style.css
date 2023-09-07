@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     padding: 50px;
 }
+
 header{
     color: rgb(229, 49, 112);
     font-family: 'Fredoka', sans-serif;
@@ -18,6 +20,7 @@ main {
      width: 1200px;
      margin: 0 auto;
 }
+
 .testo-al-cento{
     text-align: center;
     font-size: 0.8em;
@@ -25,9 +28,15 @@ main {
     padding: 20px;
 }
 
+.mail{
+    color: rgb(53, 146, 203);
+}
+
 img{
     width: 80px;
 }
+
+/* box con nomi e foto */
 article{
     display:inline-flex;
     width: 33%;
@@ -51,6 +60,7 @@ article{
     float: left;
 }
 
+/* riquadri neri con i nomi | professione | e-mail */
 .box-neri{
     color:white;
     background-color: black;
@@ -63,6 +73,3 @@ article{
 
 }
 
-.mail{
-    color: rgb(53, 146, 203);
-}
