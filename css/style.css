@@ -48,13 +48,8 @@ article{
 
 .pull-left{
     float: left;
-    margin-right: 5px;
 }
 
-.pull-right{
-    float: right;
-    margin-left: 5px;
-}
 .box-neri{
     color:white;
     background-color: black;
