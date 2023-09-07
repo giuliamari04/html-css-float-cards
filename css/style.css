@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    padding: 50px;
+}
 header{
     color: rgb(229, 49, 112);
     font-family: 'Fredoka', sans-serif;
