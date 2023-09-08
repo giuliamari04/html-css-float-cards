@@ -1,28 +1,46 @@
+/* general */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    padding: 50px;
-
+:root{
+    --color-dark:black;
+    --color-light:white;
+    --color-azul:rgb(53, 146, 203);
+    --color-title:rgb(229, 49, 112);
+    --color-shadow:rgb(82, 82, 82);
 }
 
-header{
-    color: rgb(229, 49, 112);
+body{
+    padding: 50px; 
     font-family: 'Fredoka', sans-serif;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* content */
+header{
+    color:var(--color-title);
     text-align: center;
+    font-weight: 600;
+    padding: 20px 0;
 }
    
 main {
-     font-family: 'Fredoka', sans-serif;
-     padding-top: 2%;
      padding-left: 8%;
      padding-right: 8%;
      width: 1200px;
-     margin: 0 auto;
-     
+     margin: 0 auto;     
+}
+
+img{
+    width: 80px;
+    box-shadow: 5px 5px 10px var(--color-shadow);
 }
 
 .testo-al-cento{
@@ -30,35 +48,24 @@ main {
     font-size: 0.8em;
     line-height: 1;
     padding-top: 20px;
-}
-
-.mail{
-    color: rgb(53, 146, 203);
-}
-
-img{
-    width: 80px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
 }
 
 /* box con nomi e foto */
-article{
+.article{
     display:inline-flex;
-    width: calc(100% / 3);
-    padding-top: 4%;
-    padding-left: 3%;
-    
-    
+    width: calc(100% / 3 - 10px);
+    margin: 5px;
+}
+
+.mail{
+    color:var(--color-azul);
 }
 
 .clearfix::after{
     content: "";
     display: table;
     clear: both;
-}
-.wrapper{
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .pull-left{
@@ -67,15 +74,13 @@ article{
 
 /* riquadri neri con i nomi | professione | e-mail */
 .box-neri{
-    color:white;
-    background-color: black;
+    color:var(--color-light);
+    background-color: var(--color-dark);
     font-size: 0.8em;
     display: inline-block;
     width:100%;
     padding-left: 10px;
     padding-top: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-
-
+    box-shadow: 5px 5px 10px var(--color-shadow);
 }
 
